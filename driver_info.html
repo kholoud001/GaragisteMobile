@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Screen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class=" w-full min-h-screen bg-white flex flex-col justify-between">
+
+  <!-- Navbar -->
+  <nav class="bg-[#008080] py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+        <img src="../images/SygmaLogo.png" class="h-8">
+        <i class="fas fa-right-from-bracket text-white"></i>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <!-- Driver info -->
+  <div class="flex items-center mx-8 mt-8 space-x-2">
+    <i class="fas fa-camera text-teal-600"></i>
+    <h1 class="text-xl font-bold text-teal-600">Scan driver information</h1>
+</div>
+<div class="flex flex-col items-center mt-5 gap-4 mx-8 flex-grow">
+    <div class = "flex flex-col">
+        <label for = "frontCard" class = "cursor-pointer hover:bg-white transition-all flex flex-col justify-center items-center w-fit h-40 md:w-[302px] md:h-[204px] border-dashed border-2 rounded-lg bg-gray-200 border-gray-300">
+            <i class = "text-gray-400 text-3xl fas fa-camera"></i>
+            <p class = "text-center text-gray-400">
+                Click to take a picture of your driving license.
+            </p>
+            <input id="frontCard" type="file" class="hidden" />
+        </label>
+    </div>
+</div>
+   <!-- Car info -->
+    <div class="flex items-center mx-8 mt-8 space-x-2">
+        <i class="fas fa-camera text-teal-600"></i>
+        <h1 class="text-xl font-bold text-teal-600">Scan car information</h1>
+    </div>
+    <div class="flex flex-col items-center mt-5 gap-4 mx-8 flex-grow">
+        <div class = "flex flex-col gap-4">
+            <label for = "frontCard" class = "cursor-pointer hover:bg-white transition-all flex flex-col justify-center items-center w-fit h-40 md:w-[302px] md:h-[204px] border-dashed border-2 rounded-lg bg-gray-200 border-gray-300">
+                <i class = "text-gray-400 text-3xl fas fa-camera"></i>
+                <p class = "text-center text-gray-400">
+                    Click to take a picture of Carte grise front .
+                </p>
+                <input id="frontCard" type="file" class="hidden" />
+            </label>
+            <label for = "frontCard" class = "cursor-pointer hover:bg-white transition-all flex flex-col justify-center items-center w-fit h-40 md:w-[302px] md:h-[204px] border-dashed border-2 rounded-lg bg-gray-200 border-gray-300">
+                <i class = "text-gray-400 text-3xl fas fa-camera"></i>
+                <p class = "text-center text-gray-400">
+                    Click to take a picture of Carte grise back .
+                </p>
+                <input id="frontCard" type="file" class="hidden" />
+            </label>
+        </div>
+
+
+    <button onclick="window.location.href='car_type.html'" type="submit" class=" w-1/2 bg-[#008080] text-white font-medium py-2 rounded mt-4 ">Next</button>
+</div>
+  <!-- Footer -->
+  <footer class="  relative overflow-hidden">
+    <svg xmlns:xlink="http://www.w3.org/1999/xlink" id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 360" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <path style="transform:translate(0, 0px); opacity:1" fill="#008080" d="M0,180L120,204C240,228,480,276,720,276C960,276,1200,228,1440,192C1680,156,1920,132,2160,102C2400,72,2640,36,2880,54C3120,72,3360,144,3600,144C3840,144,4080,72,4320,78C4560,84,4800,168,5040,192C5280,216,5520,180,5760,150C6000,120,6240,96,6480,84C6720,72,6960,72,7200,66C7440,60,7680,48,7920,60C8160,72,8400,108,8640,144C8880,180,9120,216,9360,216C9600,216,9840,180,10080,192C10320,204,10560,264,10800,240C11040,216,11280,108,11520,90C11760,72,12000,144,12240,144C12480,144,12720,72,12960,78C13200,84,13440,168,13680,198C13920,228,14160,204,14400,216C14640,228,14880,276,15120,294C15360,312,15600,300,15840,246C16080,192,16320,96,16560,96C16800,96,17040,192,17160,240L17280,288L17280,360L17160,360C17040,360,16800,360,16560,360C16320,360,16080,360,15840,360C15600,360,15360,360,15120,360C14880,360,14640,360,14400,360C14160,360,13920,360,13680,360C13440,360,13200,360,12960,360C12720,360,12480,360,12240,360C12000,360,11760,360,11520,360C11280,360,11040,360,10800,360C10560,360,10320,360,10080,360C9840,360,9600,360,9360,360C9120,360,8880,360,8640,360C8400,360,8160,360,7920,360C7680,360,7440,360,7200,360C6960,360,6720,360,6480,360C6240,360,6000,360,5760,360C5520,360,5280,360,5040,360C4800,360,4560,360,4320,360C4080,360,3840,360,3600,360C3360,360,3120,360,2880,360C2640,360,2400,360,2160,360C1920,360,1680,360,1440,360C1200,360,960,360,720,360C480,360,240,360,120,360L0,360Z"/>
+      </svg>
+  </footer>
+  
+
+</body>
+</html>
